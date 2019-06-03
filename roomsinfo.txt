@@ -1,0 +1,12 @@
+room 2, door with a ghost sloth that requires you to solve a riddle before opening the door.
+
+riddle - 
+
+It cannot be seen, cannot be felt,
+Cannot be heard, cannot be smelt.
+It lies behind stars and under hills,
+And empty holes it fills.
+It comes out first and follows after,
+Ends life, kills laughter. 
+
+answer - dark
