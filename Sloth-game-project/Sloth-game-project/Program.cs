@@ -151,38 +151,100 @@ namespace Sloth_game_project
             } while (answer1 != "1");
 
 
-            Console.WriteLine("Its hard to make out what's in the room, but you hear a soft snooring, almost sounds like purring.");
-            Console.WriteLine("Once your eyes adjust to the light, your heart sinks as you notice a leopard sleeping on a pile of rubbish..");
-            Console.WriteLine("Something else catches your eye as you're looking around.. a key hanging off a pipe right below the leopard.");
-            Console.WriteLine("The room opens up with two exits, one behind the leopard and another one that goes deeper into the sewer.");
-            Console.WriteLine("What do you do?..");
+            Console.WriteLine("It's hard to make out what's in the room, but you hear a soft snore. Almost sounds like purring.");
+            Thread.Sleep(1000);
             Console.WriteLine();
-            Console.WriteLine("1 - Sneak Past the Leopard East");
-            Console.WriteLine("2 - Sneak Past the Leopard South");
-            Console.WriteLine("3 - Try and grap the key..");
-
+            Console.WriteLine("Once your eyes adjust to the light, your heart sinks as you notice a leopard sleeping on a pile of rubbish in front of you.");
+            Thread.Sleep(1000);
+            Console.WriteLine();
+            Console.WriteLine("Something else catches your eye as you're looking around, you spot a key hanging off a pipe right above the leopard.");
+            Thread.Sleep(1000);
+            Console.WriteLine();
+            Console.WriteLine("You spot two possible exits, one behind the leopard and another one to your right that seems to go deeper into the sewer.");
+            Thread.Sleep(1000);
+            Console.WriteLine();
+            Console.WriteLine("What do you do...?");
+            Console.WriteLine();
+            Console.WriteLine("1 - Attempt to sneak behind the Leopard and continue North.");
+            Console.WriteLine("2 - Sneak around the Leopard and head East.");
+            Console.WriteLine("3 - Try to grab the key that is right above the sleeping Leopard.");
+            Console.WriteLine("4 - Head back South.");
+            Console.WriteLine();
             answer2 = Console.ReadLine();
+            Console.Clear();
 
             do
             {
                 switch (answer2)
                 {
-                    case "2":
-                        Console.WriteLine("You sneak past the Leopard South..");
-                        break;
-
                     case "1":
                         Console.WriteLine("Your path is blocked.. you cannot go that way.");
+                        Thread.Sleep(3000);
+                        Console.Clear();
                         break;
-
+                    case "2":
+                        Console.WriteLine("You sneak past the Leopard South..");
+                        Thread.Sleep(3000);
+                        Console.Clear();
+                        break;                    
                     case "3":
-                        Console.WriteLine("You risk it all .. and lose it all. You have been eaten.");
+                        if ((sloth[0].inventory == "RUSTY KNIFE") && (answer2 == "3"))
+                        {
+                            sloth[1].inventory = "UNKNOWN KEY";
+                            sloth[1].description = "- You don't know what door this goes into, just try to use for as many locked doors as you can find.";
+
+                            Console.WriteLine("You decide that you only live once anyway, so you walk quietly directly in front of the Leopard to try to grab the key.");
+                            Thread.Sleep(1000);
+                            Console.WriteLine();
+                            Console.WriteLine("You quickly remember about the knife you found earlier, and you decide to throw it as hard as you can into the Leopard.");
+                            Thread.Sleep(1000);
+                            Console.WriteLine();
+                            Console.WriteLine("The knife embeds into the Leopard's head, its blood spills everywhere like a faucet that's left open.");
+                            Thread.Sleep(1000);
+                            Console.WriteLine();
+                            Console.WriteLine("You stand on the Leopard's corpse which allows you to easily grab the key.");
+                            Thread.Sleep(1000);
+                            Console.WriteLine();
+                            Console.WriteLine("This key might be useful later.");
+                            Thread.Sleep(1000);
+                            Console.WriteLine();
+                            Console.WriteLine("[ACQUIRED UNKNOWN KEY]");
+                            Console.WriteLine();
+                            Thread.Sleep(3000);
+                            Console.Clear();
+                        }
+                        else
+                        {
+                            Console.WriteLine("You decide that you only live once anyway, so you walk quietly directly in front of the Leopard to try to grab the key.");
+                            Thread.Sleep(1000);
+                            Console.WriteLine();
+                            Console.WriteLine("But you're a sloth and you have no concept of stealth so the loud rustling of rubbish under your footsteps awakens the Leopard...");
+                            Thread.Sleep(1000);
+                            Console.WriteLine();
+                            Console.WriteLine("The Leopard pounces on you and starts ripping you apart with its claws, your blood paints the walls around the room.");
+                            Thread.Sleep(1000);
+                            Console.WriteLine();
+                            Console.WriteLine("[GAME OVER]");
+                            Thread.Sleep(3000);
+                            Console.Clear();
+                        }
+                        break;
+                    case "4":
+                        break;
+                    case "inventory":
+                        storage(ref answer2, sloth);
+                        break;
+                    default:
+                        Console.WriteLine("I do not understand your input.");
+                        Thread.Sleep(3000);
+                        Console.Clear();
                         break;
                 }
 
-            } while (answer2 == "2");
-        }
+            } while ((answer2 != "1") || (answer2 != "2") || (answer2 != "3"));
 
+            Console.ReadLine();
+        }
 
         static void Main(string[] args)
         {
