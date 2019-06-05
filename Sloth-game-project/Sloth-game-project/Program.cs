@@ -7,8 +7,15 @@ using System.Threading;
 
 namespace Sloth_game_project
 {
+    public struct Player
+    {
+        public string inventory;
+    }
+
     class Program
     {
+        public static Player[] sloth = new Player[100];
+        public static string handhole = "", entered = "";
 
         static void LevelOne()
         {
@@ -32,6 +39,7 @@ namespace Sloth_game_project
                 Console.WriteLine("You see a long narrow hallway that is as long as the eye can see.");
                 Console.WriteLine("You are in the sewers, it is dark and you notice an unnatural green fog that is hard to see through.");
                 Console.WriteLine("The fog obscures your visibility range.");
+                Console.WriteLine();
                 Console.WriteLine("What do you do...?");
                 Console.WriteLine();
                 Console.WriteLine("1 - Go North");
@@ -41,8 +49,8 @@ namespace Sloth_game_project
 
                 Console.WriteLine();
                 answer1 = Console.ReadLine();
-                Console.WriteLine();
-
+                Console.Clear();
+                
                 switch (answer1)
                 {
                     case "1":
@@ -50,10 +58,71 @@ namespace Sloth_game_project
                         Thread.Sleep(3000);
                         Console.Clear();
                         break;
-                    case "2":
-                        Console.WriteLine("You look right, there is only wall.");
-                        Thread.Sleep(2000);
-                        Console.Clear();
+                    case "2":                        
+                        if (entered == "")
+                        {
+                            do
+                            {
+                                Console.WriteLine("You look right, you see a hole in the moss-covered wall where your claws can easily fit through.");
+                                Thread.Sleep(1000);
+                                Console.WriteLine();
+                                Console.WriteLine("Stick your hand in the wall?");
+                                Console.WriteLine();
+                                Console.WriteLine("1 - Do it");
+                                Console.WriteLine("2 - Do not");
+                                Console.WriteLine();
+                                handhole = Console.ReadLine();
+                                Console.Clear();
+
+                                if (handhole == "1")
+                                {
+                                    sloth[0].inventory = "rusty knife";
+
+                                    entered = "yes";
+                                    Console.WriteLine("You decide to enter your claws into the hole and...");
+                                    Thread.Sleep(3000);
+                                    Console.WriteLine();
+                                    Console.WriteLine("You found a rusty knife with some unknown markings on the blade.");
+                                    Thread.Sleep(1000);
+                                    Console.WriteLine();
+                                    Console.WriteLine("Might be useful later.");
+                                    Thread.Sleep(1000);
+                                    Console.WriteLine();
+                                    Console.WriteLine("ACQUIRED RUSTY KNIFE");
+                                    Console.WriteLine();                                 
+                                    Thread.Sleep(3000);
+                                }
+                                else if (handhole == "2")
+                                {
+                                    entered = "yes";
+                                    Console.WriteLine("You decide that it's in your best interests to not stick your hand in random places.");                                   
+                                    Thread.Sleep(3000);
+                                    Console.Clear();
+                                }
+                                else
+                                {
+                                    Console.WriteLine("I do not understand your input.");
+                                    Thread.Sleep(3000);
+                                    Console.Clear();
+                                }
+
+                            } while ((handhole != "1") && (handhole != "2"));
+                        }
+                        else if (entered == "yes")
+                        {
+                            Console.WriteLine("You have already looked into the hole.");
+                            Thread.Sleep(1000);
+                            Console.WriteLine();
+                            Console.WriteLine("You decide that it is a waste of time to look in there again.");
+                            Thread.Sleep(3000);
+                            Console.Clear();
+                        }
+                        else
+                        {
+                            Console.WriteLine("I do not understand your input.");
+                            Thread.Sleep(3000);
+                            Console.Clear();
+                        }
                         break;
                     case "3":
                         Console.WriteLine("Going back into where the poachers are seems to be a bad idea.");
@@ -61,13 +130,13 @@ namespace Sloth_game_project
                         Console.Clear();
                         break;
                     case "4":
-                        Console.WriteLine("You look left, there is only wall.");
-                        Thread.Sleep(2000);
+                        Console.WriteLine("You look left, there is only a wall covered with moss.");
+                        Thread.Sleep(3000);
                         Console.Clear();
                         break;
                     default:
                         Console.WriteLine("I do not understand your input.");
-                        Thread.Sleep(2000);
+                        Thread.Sleep(3000);
                         Console.Clear();
                         break;
                 }
@@ -105,14 +174,6 @@ namespace Sloth_game_project
                 }
 
             } while (answer2 == "2");
-
-
-
-
-
-
-
-
         }
 
 
@@ -162,8 +223,8 @@ namespace Sloth_game_project
                 else
                 {
                     Console.WriteLine();
-                    Console.WriteLine("Selection unrecognized. Press enter to retry.");
-                    Console.ReadLine();
+                    Console.WriteLine("I do not understand that input.");
+                    Thread.Sleep(3000);
                     Console.Clear();
                 }
 
