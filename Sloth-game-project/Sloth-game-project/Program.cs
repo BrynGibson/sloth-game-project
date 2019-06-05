@@ -10,11 +10,12 @@ namespace Sloth_game_project
     public struct Player
     {
         public string inventory;
+        public string description;
     }
 
     class Program
     {
-        public static Player[] sloth = new Player[100];
+        public static Player[] sloth = new Player[10];
         public static string handhole = "", entered = "";
 
         static void LevelOne()
@@ -76,7 +77,8 @@ namespace Sloth_game_project
 
                                 if (handhole == "1")
                                 {
-                                    sloth[0].inventory = "rusty knife";
+                                    sloth[0].inventory = "RUSTY KNIFE";
+                                    sloth[0].description = "- Unknown inscriptions are on the blade, it easily scratches stone regardless of the rust.";
 
                                     entered = "yes";
                                     Console.WriteLine("You decide to enter your claws into the hole and...");
@@ -88,13 +90,12 @@ namespace Sloth_game_project
                                     Console.WriteLine("Might be useful later.");
                                     Thread.Sleep(1000);
                                     Console.WriteLine();
-                                    Console.WriteLine("ACQUIRED RUSTY KNIFE");
+                                    Console.WriteLine("[ACQUIRED RUSTY KNIFE]");
                                     Console.WriteLine();                                 
                                     Thread.Sleep(3000);
                                 }
                                 else if (handhole == "2")
                                 {
-                                    entered = "yes";
                                     Console.WriteLine("You decide that it's in your best interests to not stick your hand in random places.");                                   
                                     Thread.Sleep(3000);
                                     Console.Clear();
@@ -133,6 +134,9 @@ namespace Sloth_game_project
                         Console.WriteLine("You look left, there is only a wall covered with moss.");
                         Thread.Sleep(3000);
                         Console.Clear();
+                        break;
+                    case "inventory":
+                        storage(sloth);
                         break;
                     default:
                         Console.WriteLine("I do not understand your input.");
@@ -229,6 +233,21 @@ namespace Sloth_game_project
                 }
 
             } while (selection != "2");
+        }
+
+        public static void storage(Player[] sloth)
+        {
+            Console.WriteLine("INVENTORY");
+            Console.WriteLine();
+
+            for (int x = 0; x < sloth.Length; x++)
+            {
+                Console.WriteLine(sloth[x].inventory);
+                Console.WriteLine(sloth[x].description);
+            }
+
+            Thread.Sleep(5000);
+            Console.Clear();
         }
     }
 }
