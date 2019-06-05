@@ -24,11 +24,13 @@ namespace Sloth_game_project
 
             Console.Clear();
             Console.WriteLine("You are an exotic sloth, escaping dangerous poachers that want to sell you as a pet.");
-            Console.WriteLine("You make a narrow escape in the sewers, but you reach a few rooms that are seemingly a dead end.");
-            Console.WriteLine("You must escape the sewers and the poachers into the forest so you can have a life.");
             Console.WriteLine();
-            Console.WriteLine("Press enter to continue..");
-            Console.ReadLine();
+            Thread.Sleep(2000);
+            Console.WriteLine("You make a narrow escape in the sewers, but you reach a few rooms that are seemingly a dead end.");
+            Console.WriteLine();
+            Thread.Sleep(2000);
+            Console.WriteLine("You must escape the sewers and the poachers into the forest so you can have a life.");
+            Thread.Sleep(3000);
             Console.Clear();
 
 
@@ -93,6 +95,7 @@ namespace Sloth_game_project
                                     Console.WriteLine("[ACQUIRED RUSTY KNIFE]");
                                     Console.WriteLine();                                 
                                     Thread.Sleep(3000);
+                                    Console.Clear();
                                 }
                                 else if (handhole == "2")
                                 {
@@ -136,7 +139,7 @@ namespace Sloth_game_project
                         Console.Clear();
                         break;
                     case "inventory":
-                        storage(sloth);
+                        storage(ref answer1, sloth);
                         break;
                     default:
                         Console.WriteLine("I do not understand your input.");
@@ -211,6 +214,8 @@ namespace Sloth_game_project
                 Console.WriteLine("1: PLAY");
                 Console.WriteLine("2: QUIT");
                 Console.WriteLine();
+                Console.WriteLine("Tip: Type the word inventory to view your inventory while in-game.");
+                Console.WriteLine();
                 Console.Write("Input selection: ");
                 selection = Console.ReadLine();
 
@@ -235,19 +240,22 @@ namespace Sloth_game_project
             } while (selection != "2");
         }
 
-        public static void storage(Player[] sloth)
+        public static void storage(ref string yeet, Player[] sloth)
         {
-            Console.WriteLine("INVENTORY");
-            Console.WriteLine();
-
-            for (int x = 0; x < sloth.Length; x++)
+            if (yeet == "inventory")
             {
-                Console.WriteLine(sloth[x].inventory);
-                Console.WriteLine(sloth[x].description);
-            }
+                Console.WriteLine("INVENTORY");
+                Console.WriteLine();
 
-            Thread.Sleep(5000);
-            Console.Clear();
+                for (int x = 0; x < sloth.Length; x++)
+                {
+                    Console.WriteLine(sloth[x].inventory);
+                    Console.WriteLine(sloth[x].description);
+                }
+
+                Thread.Sleep(5000);
+                Console.Clear();
+            }
         }
     }
 }
