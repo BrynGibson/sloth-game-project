@@ -14,42 +14,65 @@ namespace Sloth_game_project
         {
             string answer1, answer2;
 
+            Console.Clear();
             Console.WriteLine("You are an exotic sloth, escaping dangerous poachers that want to sell you as a pet.");
             Console.WriteLine("You make a narrow escape in the sewers, but you reach a few rooms that are seemingly a dead end.");
             Console.WriteLine("You must escape the sewers and the poachers into the forest so you can have a life.");
+            Console.WriteLine();
             Console.WriteLine("Press enter to continue..");
             Console.ReadLine();
-            //Console.Clear();
+            Console.Clear();
 
 
             //ROOM 1
-            Console.WriteLine("You see a long narrow hallway that is as long as the eye can see.");
-            Console.WriteLine("You are in the sewers, it is dark and you notice an unnatural green fog that is hard to see through.");
-            Console.WriteLine("The fog obscures your visibility range.");
-            Console.WriteLine("What do you do?..");
-            Console.WriteLine();
-            Console.WriteLine("1 - Go North");
-            Console.WriteLine("2 - Go East");
-            Console.WriteLine("3 - Go South");
-            Console.WriteLine("4 - Go West");
-
-            answer1 = Console.ReadLine();
+            
 
             do
             {
+                Console.WriteLine("You see a long narrow hallway that is as long as the eye can see.");
+                Console.WriteLine("You are in the sewers, it is dark and you notice an unnatural green fog that is hard to see through.");
+                Console.WriteLine("The fog obscures your visibility range.");
+                Console.WriteLine("What do you do...?");
+                Console.WriteLine();
+                Console.WriteLine("1 - Go North");
+                Console.WriteLine("2 - Go East");
+                Console.WriteLine("3 - Go South");
+                Console.WriteLine("4 - Go West");
+
+                Console.WriteLine();
+                answer1 = Console.ReadLine();
+                Console.WriteLine();
 
                 switch (answer1)
                 {
-                    case "3":
-                        Console.WriteLine("You head south..");
+                    case "1":
+                        Console.WriteLine("You head north through the fog.");
+                        Thread.Sleep(3000);
+                        Console.Clear();
                         break;
-
+                    case "2":
+                        Console.WriteLine("You look right, there is only wall.");
+                        Thread.Sleep(2000);
+                        Console.Clear();
+                        break;
+                    case "3":
+                        Console.WriteLine("Going back into where the poachers are seems to be a bad idea.");
+                        Thread.Sleep(3000);
+                        Console.Clear();
+                        break;
+                    case "4":
+                        Console.WriteLine("You look left, there is only wall.");
+                        Thread.Sleep(2000);
+                        Console.Clear();
+                        break;
                     default:
-                        Console.WriteLine("You cannot go that way..");
+                        Console.WriteLine("I do not understand your input.");
+                        Thread.Sleep(2000);
+                        Console.Clear();
                         break;
                 }
 
-            } while (answer1 == "3");
+            } while (answer1 != "1");
 
 
             Console.WriteLine("Its hard to make out what's in the room, but you hear a soft snooring, almost sounds like purring.");
@@ -57,9 +80,11 @@ namespace Sloth_game_project
             Console.WriteLine("Something else catches your eye as you're looking around.. a key hanging off a pipe right below the leopard.");
             Console.WriteLine("The room opens up with two exits, one behind the leopard and another one that goes deeper into the sewer.");
             Console.WriteLine("What do you do?..");
+            Console.WriteLine();
             Console.WriteLine("1 - Sneak Past the Leopard East");
             Console.WriteLine("2 - Sneak Past the Leopard South");
             Console.WriteLine("3 - Try and grap the key..");
+
             answer2 = Console.ReadLine();
 
             do
