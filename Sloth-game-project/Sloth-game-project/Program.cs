@@ -33,8 +33,10 @@ namespace Sloth_game_project
             Console.WriteLine("");
             Console.WriteLine("press enter to continue...");
             Console.ReadLine();
+            Console.Clear();
             Console.WriteLine("You are an exotic sloth, escaping dangerous poachers that want to sell you as a pet.");
-
+            Console.WriteLine();
+            Thread.Sleep(2000);
             Console.WriteLine("You make a narrow escape in the sewers, but you reach a few rooms that are seemingly a dead end.");
             Console.WriteLine();
             Thread.Sleep(2000);
@@ -48,15 +50,16 @@ namespace Sloth_game_project
 
             do
             {
-                Console.WriteLine("You see a long narrow hallway that is as long as the eye can see.");
-                Console.WriteLine("You are in the sewers, it is dark and you notice an unnatural green fog that is hard to see through.");
-                Console.WriteLine("The fog obscures your visibility range.");
+                Console.WriteLine("You mannage to lift it open and drop in, just mannageing to close it off before the poachers catch up.");
+                Console.WriteLine("you slide down the ladder into a brigthly lit room");
+                Console.WriteLine("Your eyes slowly adjusts to the bright ceiling lights dangling in front of your eyes.");
+                Console.WriteLine("You notice that there is only one exit, througth a small sewer grate.");
                 Console.WriteLine();
                 Console.WriteLine("What do you do...?");
                 Console.WriteLine();
-                Console.WriteLine("1 - Go North");
+                Console.WriteLine("1 - Go South");
                 Console.WriteLine("2 - Go East");
-                Console.WriteLine("3 - Go South");
+                Console.WriteLine("3 - Go North");
                 Console.WriteLine("4 - Go West");
 
                 Console.WriteLine();
@@ -66,7 +69,7 @@ namespace Sloth_game_project
                 switch (answer1)
                 {
                     case "1":
-                        Console.WriteLine("You head north through the fog.");
+                        Console.WriteLine("You head South through the sewer grate, you mannage just to fir through.");
                         Thread.Sleep(3000);
                         Console.Clear();
                         break;
@@ -174,10 +177,10 @@ namespace Sloth_game_project
             Console.WriteLine();
             Console.WriteLine("What do you do...?");
             Console.WriteLine();
-            Console.WriteLine("1 - Attempt to sneak behind the Leopard and continue North.");
-            Console.WriteLine("2 - Sneak around the Leopard and head East.");
-            Console.WriteLine("3 - Try to grab the key that is right above the sleeping Leopard.");
-            Console.WriteLine("4 - Head back South.");
+            Console.WriteLine("1 - Attempt to grab the key");
+            Console.WriteLine("2 - Sneak around the Leopard East.");
+            Console.WriteLine("3 - Continue deeper into the sewers south");
+            Console.WriteLine("4 - Head back into the sewer grate.");
             Console.WriteLine();
             answer2 = Console.ReadLine();
             Console.Clear();
@@ -186,29 +189,33 @@ namespace Sloth_game_project
             {
                 switch (answer2)
                 {
-                    case "1":
-                        Console.WriteLine("Your path is blocked.. you cannot go that way.");
+                    case "3":
+                        Console.WriteLine("there is a clearing going south, so you decide that it is best to leave the leopard alone");
                         Thread.Sleep(3000);
                         Console.Clear();
                         break;
                     case "2":
-                        Console.WriteLine("You sneak past the Leopard South..");
+                        Console.WriteLine("You look down at the ground and notice that it is covered in cans and glass which will make it impossible to sneek past");
+                        Console.WriteLine("You realise that it would not be worth trying to sneak past");
                         Thread.Sleep(3000);
                         Console.Clear();
                         break;                    
-                    case "3":
+                    case "1":
                         if ((sloth[0].inventory == "RUSTY KNIFE") && (answer2 == "3"))
                         {
                             sloth[1].inventory = "UNKNOWN KEY";
                             sloth[1].description = "- You don't know what door this goes into, just try to use for as many locked doors as you can find.";
 
-                            Console.WriteLine("You decide that you only live once anyway, so you walk quietly directly in front of the Leopard to try to grab the key.");
+                            Console.WriteLine("You decide to try and grab the key hanging below the leopard");
                             Thread.Sleep(1000);
                             Console.WriteLine();
-                            Console.WriteLine("You quickly remember about the knife you found earlier, and you decide to throw it as hard as you can into the Leopard.");
+                            Console.WriteLine("As you walk over the glass and cans on the ground it awakes the leopard from its slumber");
                             Thread.Sleep(1000);
                             Console.WriteLine();
-                            Console.WriteLine("The knife embeds into the Leopard's head, its blood spills everywhere like a faucet that's left open.");
+                            Console.WriteLine("with your quick thinking you take out the rusty knife from earlier and and hold it infront of the charging leopard");
+                            Thread.Sleep(1000);
+                            Console.WriteLine();
+                            Console.WriteLine("The knife entres the leopard and which gives it a swift death");
                             Thread.Sleep(1000);
                             Console.WriteLine();
                             Console.WriteLine("You stand on the Leopard's corpse which allows you to easily grab the key.");
@@ -224,13 +231,13 @@ namespace Sloth_game_project
                         }
                         else
                         {
-                            Console.WriteLine("You decide that you only live once anyway, so you walk quietly directly in front of the Leopard to try to grab the key.");
+                            Console.WriteLine("You decide to try and grab the key hanging below the leopard");
                             Thread.Sleep(1000);
                             Console.WriteLine();
-                            Console.WriteLine("But you're a sloth and you have no concept of stealth so the loud rustling of rubbish under your footsteps awakens the Leopard...");
+                            Console.WriteLine("As you walk over the glass and cans on the ground it awakes the leopard from its slumber");
                             Thread.Sleep(1000);
                             Console.WriteLine();
-                            Console.WriteLine("The Leopard pounces on you and starts ripping you apart with its claws, your blood paints the walls around the room.");
+                            Console.WriteLine("with no form of protection you are left to be mauled by the leopard");
                             Thread.Sleep(1000);
                             Console.WriteLine();
                             Console.WriteLine("[GAME OVER]");
@@ -239,6 +246,7 @@ namespace Sloth_game_project
                         }
                         break;
                     case "4":
+                        //add code here that goes back into room 1
                         break;
                     case "inventory":
                         storage(ref answer2, sloth);
