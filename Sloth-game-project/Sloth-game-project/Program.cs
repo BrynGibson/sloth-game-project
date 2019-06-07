@@ -15,6 +15,7 @@ namespace Sloth_game_project
 
     class Program
     {
+        public static int location = 1;
         public static Player[] sloth = new Player[10];
         public static string handhole = "", entered = "";
 
@@ -44,7 +45,7 @@ namespace Sloth_game_project
 
 
             //ROOM 1
-            
+
 
             do
             {
@@ -62,15 +63,16 @@ namespace Sloth_game_project
                 Console.WriteLine();
                 answer1 = Console.ReadLine();
                 Console.Clear();
-                
+
                 switch (answer1)
                 {
                     case "1":
                         Console.WriteLine("You head north through the fog.");
                         Thread.Sleep(3000);
                         Console.Clear();
+                        location = 2;
                         break;
-                    case "2":                        
+                    case "2":
                         if (entered == "")
                         {
                             do
@@ -102,13 +104,13 @@ namespace Sloth_game_project
                                     Thread.Sleep(1000);
                                     Console.WriteLine();
                                     Console.WriteLine("[ACQUIRED RUSTY KNIFE]");
-                                    Console.WriteLine();                                 
+                                    Console.WriteLine();
                                     Thread.Sleep(3000);
                                     Console.Clear();
                                 }
                                 else if (handhole == "2")
                                 {
-                                    Console.WriteLine("You decide that it's in your best interests to not stick your hand in random places.");                                   
+                                    Console.WriteLine("You decide that it's in your best interests to not stick your hand in random places.");
                                     Thread.Sleep(3000);
                                     Console.Clear();
                                 }
@@ -146,6 +148,9 @@ namespace Sloth_game_project
                         Console.WriteLine("You look left, there is only a wall covered with moss.");
                         Thread.Sleep(3000);
                         Console.Clear();
+                        break;
+                    case "map":
+                        Map(location);
                         break;
                     case "inventory":
                         storage(ref answer1, sloth);
@@ -195,7 +200,8 @@ namespace Sloth_game_project
                         Console.WriteLine("You sneak past the Leopard South..");
                         Thread.Sleep(3000);
                         Console.Clear();
-                        break;                    
+                        location = 3;
+                        break;
                     case "3":
                         if ((sloth[0].inventory == "RUSTY KNIFE") && (answer2 == "3"))
                         {
@@ -242,6 +248,9 @@ namespace Sloth_game_project
                         break;
                     case "inventory":
                         storage(ref answer2, sloth);
+                        break;
+                    case "map":
+                        Map(location);
                         break;
                     default:
                         Console.WriteLine("I do not understand your input.");
@@ -326,6 +335,75 @@ namespace Sloth_game_project
 
                 Thread.Sleep(5000);
                 Console.Clear();
+            }
+        }
+
+        public static void Map(int location)
+        {
+            switch (location)
+            {
+                case 1:
+                    Console.WriteLine("[ S ] [   ]");
+                    Console.WriteLine(" | |   | | ");
+                    Console.WriteLine("[   ]=[   ]");
+                    Console.WriteLine(" | |   | | ");
+                    Console.WriteLine("[   ]=[   ]");
+                    Console.WriteLine();
+                    Console.ReadLine();
+                    break;
+
+                case 2:
+                    Console.WriteLine("[   ] [   ]");
+                    Console.WriteLine(" | |   | | ");
+                    Console.WriteLine("[ S ]=[   ]");
+                    Console.WriteLine(" | |   | | ");
+                    Console.WriteLine("[   ]=[   ]");
+                    Console.WriteLine();
+                    Console.ReadLine();
+                    break;
+
+                case 3:
+                    Console.WriteLine("[   ] [   ]");
+                    Console.WriteLine(" | |   | | ");
+                    Console.WriteLine("[   ]=[   ]");
+                    Console.WriteLine(" | |   | | ");
+                    Console.WriteLine("[ S ]=[   ]");
+                    Console.WriteLine();
+                    Console.ReadLine();
+                    break;
+
+                case 4:
+                    Console.WriteLine("[   ] [   ]");
+                    Console.WriteLine(" | |   | | ");
+                    Console.WriteLine("[   ]=[   ]");
+                    Console.WriteLine(" | |   | | ");
+                    Console.WriteLine("[   ]=[ S ]");
+                    Console.WriteLine();
+                    Console.ReadLine();
+                    break;
+
+                case 5:
+                    Console.WriteLine("[   ] [   ]");
+                    Console.WriteLine(" | |   | | ");
+                    Console.WriteLine("[   ]=[ S ]");
+                    Console.WriteLine(" | |   | | ");
+                    Console.WriteLine("[   ]=[   ]");
+                    Console.WriteLine();
+                    Console.ReadLine();
+                    break;
+
+                case 6:
+                    Console.WriteLine("[   ] [ S ]");
+                    Console.WriteLine(" | |   | | ");
+                    Console.WriteLine("[   ]=[   ]");
+                    Console.WriteLine(" | |   | | ");
+                    Console.WriteLine("[   ]=[   ]");
+                    Console.WriteLine();
+                    Console.ReadLine();
+                    break;
+
+
+
             }
         }
     }
