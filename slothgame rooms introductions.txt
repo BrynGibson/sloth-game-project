@@ -67,14 +67,66 @@ Option 4: You decide to continue througth the metal door that is still opened
 room 5; north
 
 You creep througth the door and notice something in the corner,
-It almost sounds like it is feasting on something.
+It almost sounds like its feasting on something.
 The smell in the room is putrid, like something died a long time ago.
 A squeaking noice is coming from the thing in the corner, like something hasnt been oiled.
 As you creep forward to get a closer look you step on an old bone,
 C R A C K
-You stubmle back as you see the figure turn around and moves towards the light coming from the control room
-The squeaking getting louder and louder as it gets closer
-As the figure moves into the light you see what has been feasting
+You stubmle back as you see the figure turn around and move towards the light coming from the control room
+The squeaking getting louder and louder as it gets closer.
+As the figure moves into the light you see what has been feasting...
 A Large, Black, wild dog... but without any legs,
-Instead it sits upon two sets of wheels
+Instead it sits upon two sets of wheels.
+You dont have time to process this as its coming rigth towards you!
+What do you do?
+
+1: If they have banana peel; use
+2: If they have knife; use
+3: Dodge and run north
+4: Doge and run south
+
+Option 1: you remember the banana peel that you have in your inventory,
+Using your quick wits your throw the banana onto the floor as the dog rolls towards you
+The banana peel strikes the front left wheel of the dog and throws it off ballance
+The dog flies past you at lightning speed as you watch it crash througth the door to your west
+
+Option 2: you remember the rusty knife that you have in your inventory,
+Using your quick wits you throw the knife infront of one of the wheels.
+The knife strikes the front left wheel of the dog and throws it off ballance
+The dog flies past you at lightning speed as you watch it crash througth the door to your west
+
+Option 3: you decide to make a run for the door ahead of you,
+Its risky but the dog just barely mannages to miss you as you dive out of the way.
+You get up and run for the door before the dog can turn around.
+Its locked
+(code for it they have a key or not)
+If key: you remember the key that you have in your inventory
+You quicky get it out and open the door, and jump through it just in time.
+The dog is too large to fit, but it charging at you scares you enough to fall bacwards down a sewer drain
+As you hit the ground you are propelled downhill along a slimy sewer
+
+If no Key: you rember that there was a key by the leopard, thats where it would go.
+But now you are stuck, and with no way out you are left with the dog.
+You turn around and see that it is charging you, there nothing that you can do now...
+(dead)
+
+Option 4: you run into the control room.
+You slam the metal door behind you and push a fililing cabinate down to block the door
+After you catch your breath you decide to look around for anytrhing that could be of use
+(back to room 4 options)
+
+Room 5; exit
+
+As you are sliding down the sewer you start to see the ligth at the end getting brigther and brigther,
+Your eyes are so used to the dimly lit sewers that it blinds you until you have to close your eyes and hope for the best.
+T H U D
+You hit the bottom of the slimy slide and catipult forwards until you hit something hard.
+Instantly the smell of the sewers has gone, and is instead replaced by a familiar smell...
+The smell of home...
+You look up to see a large tree, sourounded by large green pastures as far as the eye can see.
+A sense of clamness and relief flows through your body as you reasise, you've done it...
+You are now free...
+(the end)
+
+
 
