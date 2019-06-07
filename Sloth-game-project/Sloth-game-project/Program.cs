@@ -345,7 +345,7 @@ namespace Sloth_game_project
                     Console.WriteLine(sloth[x].description);
                 }
 
-                Thread.Sleep(5000);
+                Console.ReadLine();
                 Console.Clear();
             }
         }
