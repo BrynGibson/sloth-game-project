@@ -23,9 +23,18 @@ namespace Sloth_game_project
             string answer1, answer2;
 
             Console.Clear();
+            Console.WriteLine("RULES/INTRODUCTION");
+            Console.WriteLine("");
+            Console.WriteLine("The rules are simple, in each room there will be multiple options for you to interact with the environment,");
+            Console.WriteLine("There will also be the option to move into a different room either north, south east and west,");
+            Console.WriteLine("You will have to navigate these rooms and explore the options that you feel best fits for your current situation,");
+            Console.WriteLine("Be carefull however, as some options will have different outcomes to certain situations which will affect your story,");
+            Console.WriteLine("Try to explore as many options as you can to undercover the story of slothscape!");
+            Console.WriteLine("");
+            Console.WriteLine("press enter to continue...");
+            Console.ReadLine();
             Console.WriteLine("You are an exotic sloth, escaping dangerous poachers that want to sell you as a pet.");
-            Console.WriteLine();
-            Thread.Sleep(2000);
+
             Console.WriteLine("You make a narrow escape in the sewers, but you reach a few rooms that are seemingly a dead end.");
             Console.WriteLine();
             Thread.Sleep(2000);
