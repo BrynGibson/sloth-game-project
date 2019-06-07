@@ -33,10 +33,8 @@ namespace Sloth_game_project
             Thread.Sleep(3000);
             Console.Clear();
 
-
             //ROOM 1
             
-
             do
             {
                 Console.WriteLine("You see a long narrow hallway that is as long as the eye can see.");
@@ -58,7 +56,7 @@ namespace Sloth_game_project
                 {
                     case "1":
                         Console.WriteLine("You head north through the fog.");
-                        Thread.Sleep(3000);
+                        Thread.Sleep(1500);
                         Console.Clear();
                         break;
                     case "2":                        
@@ -150,31 +148,32 @@ namespace Sloth_game_project
 
             } while (answer1 != "1");
 
-
-            Console.WriteLine("It's hard to make out what's in the room, but you hear a soft snore. Almost sounds like purring.");
-            Thread.Sleep(1000);
-            Console.WriteLine();
-            Console.WriteLine("Once your eyes adjust to the light, your heart sinks as you notice a leopard sleeping on a pile of rubbish in front of you.");
-            Thread.Sleep(1000);
-            Console.WriteLine();
-            Console.WriteLine("Something else catches your eye as you're looking around, you spot a key hanging off a pipe right above the leopard.");
-            Thread.Sleep(1000);
-            Console.WriteLine();
-            Console.WriteLine("You spot two possible exits, one behind the leopard and another one to your right that seems to go deeper into the sewer.");
-            Thread.Sleep(1000);
-            Console.WriteLine();
-            Console.WriteLine("What do you do...?");
-            Console.WriteLine();
-            Console.WriteLine("1 - Attempt to sneak behind the Leopard and continue North.");
-            Console.WriteLine("2 - Sneak around the Leopard and head East.");
-            Console.WriteLine("3 - Try to grab the key that is right above the sleeping Leopard.");
-            Console.WriteLine("4 - Head back South.");
-            Console.WriteLine();
-            answer2 = Console.ReadLine();
-            Console.Clear();
+            //ROOM 2//
 
             do
             {
+                Console.WriteLine("It's hard to make out what's in the room, but you hear a soft snore. Almost sounds like purring.");
+                Thread.Sleep(1000);
+                Console.WriteLine();
+                Console.WriteLine("Once your eyes adjust to the light, your heart sinks as you notice a leopard sleeping on a pile of rubbish in front of you.");
+                Thread.Sleep(1000);
+                Console.WriteLine();
+                Console.WriteLine("Something else catches your eye as you're looking around, you spot a key hanging off a pipe right above the leopard.");
+                Thread.Sleep(1000);
+                Console.WriteLine();
+                Console.WriteLine("You spot two possible exits, one behind the leopard and another one to your right that seems to go deeper into the sewer.");
+                Thread.Sleep(1000);
+                Console.WriteLine();
+                Console.WriteLine("What do you do...?");
+                Console.WriteLine();
+                Console.WriteLine("1 - Attempt to sneak behind the Leopard and continue North.");
+                Console.WriteLine("2 - Sneak around the Leopard and head East.");
+                Console.WriteLine("3 - Try to grab the key that is right above the sleeping Leopard.");
+                Console.WriteLine("4 - Head back South.");
+                Console.WriteLine();
+                answer2 = Console.ReadLine();
+                Console.Clear();
+
                 switch (answer2)
                 {
                     case "1":
@@ -236,17 +235,15 @@ namespace Sloth_game_project
                         break;
                     default:
                         Console.WriteLine("I do not understand your input.");
-                        Thread.Sleep(3000);
+                        Thread.Sleep(2000);
                         Console.Clear();
                         break;
                 }
 
-            } while ((answer2 != "1") || (answer2 != "2") || (answer2 != "3"));
-
-            Console.ReadLine();
+            } while ((answer2 != "1") && (answer2 != "2") && (answer2 != "3"));
         }
 
-        static void Main(string[] args)
+        static void Main()
         {
 
             string selection = "";
