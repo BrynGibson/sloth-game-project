@@ -45,9 +45,12 @@ namespace Sloth_game_project
             Thread.Sleep(3000);
             Console.Clear();
 
-
             //ROOM 1
 
+
+            Console.WriteLine("You manage to lift it open and drop in, just mannageing to close it off before the poachers catch up.");
+            Console.WriteLine("You are in the sewers, it is dark and you notice an unnatural green fog that is hard to see through.");
+            Console.WriteLine("The fog obscures your visibility range.");
 
             do
             {
@@ -70,7 +73,13 @@ namespace Sloth_game_project
                 switch (answer1)
                 {
                     case "1":
+
+                        
+
+                        Console.WriteLine("You head north through the fog.");
+                        Thread.Sleep(1500);
                         Console.WriteLine("You head South through the sewer grate, you mannage just to fit through.");
+
                         Thread.Sleep(3000);
                         Console.Clear();
                         location = 2;
@@ -167,6 +176,8 @@ namespace Sloth_game_project
 
             } while (answer1 != "1");
 
+            //ROOM 2//
+
 
             Console.WriteLine("It's hard to make out what's in the room, but you hear a soft snore. Almost sounds like purring.");
             Thread.Sleep(1000);
@@ -192,6 +203,28 @@ namespace Sloth_game_project
 
             do
             {
+                Console.WriteLine("It's hard to make out what's in the room, but you hear a soft snore. Almost sounds like purring.");
+                Thread.Sleep(1000);
+                Console.WriteLine();
+                Console.WriteLine("Once your eyes adjust to the light, your heart sinks as you notice a leopard sleeping on a pile of rubbish in front of you.");
+                Thread.Sleep(1000);
+                Console.WriteLine();
+                Console.WriteLine("Something else catches your eye as you're looking around, you spot a key hanging off a pipe right above the leopard.");
+                Thread.Sleep(1000);
+                Console.WriteLine();
+                Console.WriteLine("You spot two possible exits, one behind the leopard and another one to your right that seems to go deeper into the sewer.");
+                Thread.Sleep(1000);
+                Console.WriteLine();
+                Console.WriteLine("What do you do...?");
+                Console.WriteLine();
+                Console.WriteLine("1 - Attempt to sneak behind the Leopard and continue North.");
+                Console.WriteLine("2 - Sneak around the Leopard and head East.");
+                Console.WriteLine("3 - Try to grab the key that is right above the sleeping Leopard.");
+                Console.WriteLine("4 - Head back South.");
+                Console.WriteLine();
+                answer2 = Console.ReadLine();
+                Console.Clear();
+
                 switch (answer2)
                 {
                     case "3":
@@ -206,9 +239,9 @@ namespace Sloth_game_project
                         Thread.Sleep(3000);
                         Console.Clear();
 
-                        
+
                         break;
-                                 
+
                     case "1":
 
                         if ((sloth[0].inventory == "RUSTY KNIFE") && (answer2 == "3"))
@@ -266,17 +299,78 @@ namespace Sloth_game_project
                         break;
                     default:
                         Console.WriteLine("I do not understand your input.");
-                        Thread.Sleep(3000);
+                        Thread.Sleep(2000);
                         Console.Clear();
                         break;
                 }
 
-            } while ((answer2 != "1") || (answer2 != "2") || (answer2 != "3"));
+            } while ((answer2 != "1") && (answer2 != "2") && (answer2 != "3"));
 
-            Console.ReadLine();
+            //ROOM 3 SOUTH//
+            string riddleAnswer = "dark";
+
+            if (answer2 == "3")
+            {
+                do
+                {
+                    Console.WriteLine("You manage to sneak past the Leopard and you walk into the room, cautious because you were scared of another beast waiting in your path.");
+                    Thread.Sleep(1000);
+                    Console.WriteLine();
+                    Console.WriteLine("You peek into the room and see a floating apparition which you can make out as something familiar.");
+                    Thread.Sleep(1000);
+                    Console.WriteLine();
+                    Console.WriteLine("As you study it more, you realise that it is a sloth, but not a living one... a ghost.");
+                    Thread.Sleep(1000);
+                    Console.WriteLine();
+                    Console.WriteLine("It turns around and looks at you with its deathly eyes. It opens its mouth and with a deep voice says,");
+                    Thread.Sleep(1000);
+                    Console.WriteLine();
+                    Console.WriteLine("'In order to continue on your journey, you must first complete a riddle.'");
+                    Thread.Sleep(2000);
+                    Console.WriteLine();
+                    Console.WriteLine("Dazed and confused, you comply with the ghost as you realise there is no other way,");
+                    Console.WriteLine("unless you want to deal with the leopard.");
+                    Thread.Sleep(1000);
+                    Console.WriteLine();
+
+                    int riddleAtt = 0;
+                    string userRiddleAns = "";
+
+                    do
+                    {
+                        Console.WriteLine("'It cannot be seen, cannot be felt,'");
+                        Console.WriteLine("'cannot be heard, cannot be smelt.'");
+                        Console.WriteLine();
+                        Console.WriteLine("'It lies behind stars and under hills,'");
+                        Console.WriteLine("'and empty holes it fills.'");
+                        Console.WriteLine();
+                        Console.WriteLine("'It comes out first and follows after,'");
+                        Console.WriteLine("'ends life, kills laughter.'");
+                        Console.WriteLine();
+                        Console.Write("What am I? ");
+
+                        userRiddleAns = Console.ReadLine();
+
+                        if ((userRiddleAns != "dark") && (riddleAtt == 10))
+                        {
+                            Console.WriteLine("Sigh, I did not expect you to be this unintelligent.");
+                            Console.WriteLine("Tell me that the answer is 'dark'.");
+                        }
+
+                        if (userRiddleAns != "dark")
+                        {
+                            Console.WriteLine("'Wrong...'");
+                            riddleAtt += 1;
+                        }
+                    }
+                    while (userRiddleAns != "dark");
+
+                } while (riddleAnswer == "dark");
+            }
+
         }
 
-        static void Main(string[] args)
+        static void Main()
         {
 
             string selection = "";
@@ -330,8 +424,8 @@ namespace Sloth_game_project
                 }
 
             } while (selection != "2");
-        }
 
+        }
         public static void storage(ref string yeet, Player[] sloth)
         {
             if (yeet == "inventory")
@@ -424,5 +518,6 @@ namespace Sloth_game_project
 
             }
         }
+
     }
 }
