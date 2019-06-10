@@ -6,15 +6,15 @@ You will have to navigate these rooms and explore the options that you feel best
 Be carefull however, as some options will have different outcomes to certain situations which will affect your story,
 Try to explore as many options as you can to undercover the story of slothscape!
 
-spawn/first room
+spawn
 
-
+As you are running from the poachers you notice a man hole.
 You mannage to lift it open and drop in, just mannageing to close it off before the poachers catch up.
 you slide down the ladder into a brigthly lit room
 Your eyes slowly adjusts to the bright ceiling lights dangling in front of your eyes.
 You notice that there is only one exit, througth a small sewer grate.
 
-second room, south
+first room, south
 
 Once you squeeze your way througth the grate you stick your head out the other side.
 Its hard to make out whats in the room but you hear a soft snooring, it almost sounds like purring.
@@ -22,8 +22,14 @@ Once your eyes start to adjust to the light your heart sinks as you notice a leo
 Something else catches your eye as your looking around, a key hanging off of a pipe right below to leopard.
 The room opens up with two exits, one behind the leopard and another one that goes deeper into the sewer.
 
+1 - Attempt to sneak behind the Leopard and continue North.
+you decide thats its best to try and sneek past the leopard and ignore the key, 
+2 - Sneak around the Leopard and head East.
+3 - Try to grab the key that is right above the sleeping Leopard.
+4 - Head back South.
 
-third room, south
+first option, south
+second room, south
 
 You walk into the room, catious because you were scared of another beast waiting in your path,
 You peak into the room and see a floating apparition which you can make out as something simalar.
@@ -42,39 +48,5 @@ It comes out first and follows after,
 Ends life, kills laughter.
 What am I...
 
-room 4; east
 
-You entre through the locked door into a room that does not seem like the sewers.
-As you look around more you see old computer equiptment and serveliance.
-It looks like a control room for the sewers.
-It looks abandend however, like the workers dropped everthing and left, including their lunch.
-A water bottle and banna have been left on the table, the only thing that hasnt yet been coverd in spider webs.
-There is also a metal door that has been left open, almost like someone left in a hurry...
-A dent in the door is also present
-
-
-
-1. Drink the water
-2. Eat the Banana
-3. Go back west
-4. Continue North
-
-Option 1: You open the water and take a logn chug from it, your parched after the run from the poachers
-Option 2: You bite into the banana, trying to aviod the mold spreading inside, after running from the poachers its the best thing you have to keep your energy
-Option 3: You go back througth the way you came
-Option 4: You decide to continue througth the metal door that is still opened
-
-room 5; north
-
-You creep througth the door and notice something in the corner,
-It almost sounds like it is feasting on something.
-The smell in the room is putrid, like something died a long time ago.
-A squeaking noice is coming from the thing in the corner, like something hasnt been oiled.
-As you creep forward to get a closer look you step on an old bone,
-C R A C K
-You stubmle back as you see the figure turn around and moves towards the light coming from the control room
-The squeaking getting louder and louder as it gets closer
-As the figure moves into the light you see what has been feasting
-A Large, Black, wild dog... but without any legs,
-Instead it sits upon two sets of wheels
 

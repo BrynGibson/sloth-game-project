@@ -73,8 +73,7 @@ namespace Sloth_game_project
                 switch (answer1)
                 {
                     case "1":
-                        Console.WriteLine("You head north through the fog.");
-                        Thread.Sleep(1500);
+                       
                         Console.WriteLine("You head South through the sewer grate, you mannage just to fir through.");
                         Thread.Sleep(3000);
                         Console.Clear();
