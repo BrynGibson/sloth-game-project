@@ -49,4 +49,74 @@ Ends life, kills laughter.
 What am I...
 
 
+<<<<<<< HEAD
+=======
+You creep through the door and notice something in the corner,
+It almost sounds like its feasting on something.
+The smell in the room is putrid, like something died a long time ago.
+A squeaking noise is coming from the thing in the corner, like something hasn’t been oiled.
+As you creep forward to get a closer look you step on an old bone,
+C R A C K
+You stumble back as you see the figure turn around and move towards the light coming from the control room
+The squeaking getting louder and louder as it gets closer.
+As the figure moves into the light you see what has been feasting...
+A Large, Black, wild dog... but without any legs,
+Instead it sits upon two sets of wheels.
+You don’t have time to process this as its coming right towards you!
+What do you do?
+
+
+1: If they have banana peel; use
+2: If they have knife; use
+3: Dodge and run north
+4: Dodge and run south
+
+Option 1: You remember the banana peel that you have in your inventory,
+Using your quick wits your throw the banana onto the floor as the dog rolls towards you
+The banana peel strikes the front left wheel of the dog and throws it off balance
+The dog flies past you at lightning speed as you watch it crash through the door to your west
+
+Option 2: You remember the rusty knife that you have in your inventory,
+Using your quick wits you throw the knife in front of one of the wheels.
+The knife strikes the front left wheel of the dog and throws it off balance
+The dog flies past you at lightning speed as you watch it crash through the door to your west
+
+Option 3: You decide to make a run for the door ahead of you,
+Its risky but the dog just barely manages to miss you as you dive out of the way.
+You get up and run for the door before the dog can turn around.
+Its locked
+(code for it they have a key or not)
+If key: You remember the key that you have in your inventory
+You quickly get it out and open the door, and jump through it just in time.
+The dog is too large to fit, but it charging at you scares you enough to fall backwards down a sewer drain
+As you hit the ground you are propelled downhill along a slimy sewer
+
+
+If no Key: You remember that there was a key by the leopard, that’s where it would go.
+But now you are stuck, and with no way out you are left with the dog.
+You turn around and see that it is charging you, there nothing that you can do now...
+(dead)
+
+Option 4: you run into the control room.
+You slam the metal door behind you and push a filling cabinet down to block the door
+After you catch your breath you decide to look around for anything that could be of use
+(back to room 4 options)
+
+
+Room 5; exit
+
+As you are sliding down the sewer you start to see the light at the end getting brighter and brighter,
+Your eyes are so used to the dimly lit sewers that it blinds you until you have to close your eyes and hope for the best.
+T H U D
+You hit the bottom of the slimy slide and catapult forwards until you hit something hard.
+Instantly the smell of the sewers has gone, and is instead replaced by a familiar smell...
+The smell of home...
+You look up to see a large tree, surrounded by large green pastures as far as the eye can see.
+A sense of calmness and relief flows through your body as you realise, you've done it...
+You are now free...
+(the end)
+
+
+
+>>>>>>> 1f164759301c6ff684558405a5ec75ef882598e4
 

@@ -72,8 +72,7 @@ namespace Sloth_game_project
 
                 switch (answer1)
                 {
-                    case "1":
-                       
+                    case "1":        
                         Console.WriteLine("You head South through the sewer grate, you mannage just to fir through.");
                         Thread.Sleep(3000);
                         Console.Clear();
@@ -434,7 +433,7 @@ namespace Sloth_game_project
                     Console.WriteLine(sloth[x].description);
                 }
 
-                Thread.Sleep(5000);
+                Console.ReadLine();
                 Console.Clear();
             }
         }
@@ -451,6 +450,7 @@ namespace Sloth_game_project
                     Console.WriteLine("[   ]=[   ]");
                     Console.WriteLine();
                     Console.ReadLine();
+                    Console.Clear();
                     break;
 
                 case 2:
@@ -461,6 +461,7 @@ namespace Sloth_game_project
                     Console.WriteLine("[   ]=[   ]");
                     Console.WriteLine();
                     Console.ReadLine();
+                    Console.Clear();
                     break;
 
                 case 3:
@@ -471,6 +472,7 @@ namespace Sloth_game_project
                     Console.WriteLine("[ S ]=[   ]");
                     Console.WriteLine();
                     Console.ReadLine();
+                    Console.Clear();
                     break;
 
                 case 4:
@@ -481,6 +483,7 @@ namespace Sloth_game_project
                     Console.WriteLine("[   ]=[ S ]");
                     Console.WriteLine();
                     Console.ReadLine();
+                    Console.Clear();
                     break;
 
                 case 5:
@@ -491,6 +494,7 @@ namespace Sloth_game_project
                     Console.WriteLine("[   ]=[   ]");
                     Console.WriteLine();
                     Console.ReadLine();
+                    Console.Clear();
                     break;
 
                 case 6:
@@ -501,6 +505,7 @@ namespace Sloth_game_project
                     Console.WriteLine("[   ]=[   ]");
                     Console.WriteLine();
                     Console.ReadLine();
+                    Console.Clear();
                     break;
 
 
