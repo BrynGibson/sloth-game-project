@@ -49,8 +49,7 @@ Ends life, kills laughter.
 What am I...
 
 
-<<<<<<< HEAD
-=======
+
 You creep through the door and notice something in the corner,
 It almost sounds like its feasting on something.
 The smell in the room is putrid, like something died a long time ago.
@@ -118,5 +117,5 @@ You are now free...
 
 
 
->>>>>>> 1f164759301c6ff684558405a5ec75ef882598e4
+
 
