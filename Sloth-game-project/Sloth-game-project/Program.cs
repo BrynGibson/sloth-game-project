@@ -17,7 +17,7 @@ namespace Sloth_game_project
     {
         public static int location = 1;
         public static Player[] sloth = new Player[10];
-        public static string handhole, entered, answer1, answer2 = "", answer5;
+        public static string handhole, entered = "", answer1, answer2 = "", answer5;
 
         static void LevelOne()
         {          
@@ -479,7 +479,8 @@ namespace Sloth_game_project
                 Console.WriteLine("                           TIP: Type the word 'inventory', to view your inventory while in-game.");
                 Console.WriteLine("                              TIP: Type the word 'map', to view your inventory while in-game.");
                 Console.WriteLine();
-                Console.Write("Input selection: ");
+                Console.WriteLine();
+                Console.Write("                                                Input selection: ");
                 selection = Console.ReadLine();
 
                 if (selection == "1")
@@ -501,7 +502,6 @@ namespace Sloth_game_project
                 }
 
             } while (selection != "2");
-
         }
         public static void storage(ref string yeet, Player[] sloth)
         {
@@ -520,7 +520,6 @@ namespace Sloth_game_project
                 Console.Clear();
             }
         }
-
         public static void Map(int location)
         {
             switch (location)
