@@ -23,34 +23,41 @@ namespace Sloth_game_project
         {          
             Console.Clear();
             Console.WriteLine("RULES/INTRODUCTION");
-            Console.WriteLine("");
-            Console.WriteLine("The rules are simple, in each room there will be multiple options for you to interact with the environment,");
-            Console.WriteLine("There will also be the option to move into a different room either north, south east and west,");
-            Console.WriteLine("You will have to navigate these rooms and explore the options that you feel best fits for your current situation,");
-            Console.WriteLine("Be carefull however, as some options will have different outcomes to certain situations which will affect your story,");
-            Console.WriteLine("Try to explore as many options as you can to undercover the story of slothscape!");
-            Console.WriteLine("");
-            Console.WriteLine("press enter to continue...");
+            Console.WriteLine();
+            Thread.Sleep(500);
+            Console.WriteLine("The rules are simple, in each room there will be multiple options for you to interact with the environment.");
+            Thread.Sleep(500);
+            Console.WriteLine("There will also be the option to move into a different room either North, South, East and West.");
+            Thread.Sleep(500);
+            Console.WriteLine("You will have to navigate these rooms and explore the options that you feel best fit your current situation.");
+            Thread.Sleep(500);
+            Console.WriteLine("Be careful however, as some options will have different outcomes to certain situations, which will affect your story,");
+            Thread.Sleep(500);
+            Console.WriteLine("Try to explore as many options as you can to uncover the story of SLOTHSCAPE");
+            Console.WriteLine();
+            Console.WriteLine("Press enter to continue...");
             Console.ReadLine();
             Console.Clear();
-            Console.WriteLine("You are an exotic sloth, escaping dangerous poachers that want to sell you as a pet.");
+            Console.WriteLine("You're an exotic sloth, escaping dangerous poachers that want to sell you as a pet!");
             Console.WriteLine();
-            Thread.Sleep(1000);
+            Thread.Sleep(500);
             Console.WriteLine("You make a narrow escape in the sewers, but you reach a few rooms that are seemingly a dead end.");
             Console.WriteLine();
-            Thread.Sleep(1000);
-            Console.WriteLine("You must escape the sewers and the poachers into the forest so you can have a life.");
-            Thread.Sleep(3000);
+            Thread.Sleep(500);
+            Console.WriteLine("You must escape the sewers and the poachers, and get to the forest so you can have a life!");
+            Thread.Sleep(500);
+            Console.WriteLine("Press enter to continue..");
+            Console.ReadLine();
             Console.Clear();
 
             //ROOM 1
 
-            Console.WriteLine("You are in the sewers, it is dark and you notice an unnatural green fog that is hard to see through.");
-            Console.WriteLine("The fog obscures your visibility range.");
+            Console.WriteLine("You are in the sewers, it is dark and you notice an unnatural green fog that is difficult to see through.");
+            Console.WriteLine("The fog lowers your visability.");
 
             do
             {
-                Console.WriteLine("You manage to lift a open and drop in. You manage to close it off before the poachers catch up.");
+                Console.WriteLine("You manage to lift the sewer drain open, and you drop in. You manage to close it off before the poachers catch up.");
                 Thread.Sleep(500);
                 Console.WriteLine();
                 Console.WriteLine("You slide down the ladder into a brigthly lit room.");
@@ -59,14 +66,14 @@ namespace Sloth_game_project
                 Console.WriteLine("Your eyes slowly adjusts to the bright ceiling lights dangling in front of your eyes.");
                 Thread.Sleep(500);
                 Console.WriteLine();
-                Console.WriteLine("You notice that there is only one exit SOUTH, through a small sewer grate.");
+                Console.WriteLine("You notice that there is only one exit heading South, through a small sewer grate.");
                 Console.WriteLine();
                 Console.WriteLine("What do you do...?");
                 Console.WriteLine();
-                Console.WriteLine("1 - Head SOUTH");
-                Console.WriteLine("2 - Head WEST");
-                Console.WriteLine("3 - Head NORTH");
-                Console.WriteLine("4 - Head EAST");
+                Console.WriteLine("1 - Head South");
+                Console.WriteLine("2 - Head West");
+                Console.WriteLine("3 - Head North");
+                Console.WriteLine("4 - Head East");
 
                 Console.WriteLine();
                 answer1 = Console.ReadLine();
@@ -75,7 +82,7 @@ namespace Sloth_game_project
                 switch (answer1)
                 {
                     case "1":                        
-                        Console.WriteLine("You head SOUTH through the sewer grate, you manage just to fit through.");
+                        Console.WriteLine("You head South through the sewer grate... you manage to JUST fit through.");
                         Thread.Sleep(3000);
                         Console.Clear();
                         location = 2;
@@ -85,7 +92,7 @@ namespace Sloth_game_project
                         {
                             do
                             {
-                                Console.WriteLine("You look right, you see a hole in the moss-covered wall where your claws can easily fit through.");
+                                Console.WriteLine("You look right.. you see a hole in the moss-covered wall, the size of your hand..");
                                 Thread.Sleep(500);
                                 Console.WriteLine();
                                 Console.WriteLine("Stick your hand in the wall?");
@@ -103,12 +110,12 @@ namespace Sloth_game_project
 
                                     entered = "yes";
                                     Console.WriteLine("You decide to enter your claws into the hole and...");
-                                    Thread.Sleep(3000);
+                                    Thread.Sleep(500);
                                     Console.WriteLine();
                                     Console.WriteLine("You found a rusty knife with some unknown markings on the blade.");
                                     Thread.Sleep(500);
                                     Console.WriteLine();
-                                    Console.WriteLine("Might be useful later.");
+                                    Console.WriteLine("Might be useful for later.");
                                     Thread.Sleep(500);
                                     Console.WriteLine();
                                     Console.WriteLine("[ACQUIRED RUSTY KNIFE]");
@@ -148,7 +155,7 @@ namespace Sloth_game_project
                         }
                         break;
                     case "3":
-                        Console.WriteLine("Going back into where the poachers are seems to be a bad idea.");
+                        Console.WriteLine("Going backwards doesn't seem like a good idea right now..");
                         Thread.Sleep(3000);
                         Console.Clear();
                         break;
@@ -182,16 +189,16 @@ namespace Sloth_game_project
             //ROOM 2//
             do
             {
-                Console.WriteLine("It's hard to make out what's in the room, but you hear a soft snore. Almost sounds like purring.");
+                Console.WriteLine("It's hard to make out what's in the room, but you hear a soft snore.. almost like purring.");
                 Thread.Sleep(500);
                 Console.WriteLine();
-                Console.WriteLine("Once your eyes adjust to the light, your heart sinks as you notice a leopard sleeping on a pile of rubbish in front of you.");
+                Console.WriteLine("Once your eyes adjust to the light, your heart sinks as you notice a Leopard, sleeping on a pile of rubbish in before your eyes!");
                 Thread.Sleep(500);
                 Console.WriteLine();
-                Console.WriteLine("Something else catches your eye as you're looking around, you spot a key hanging off a pipe right above the leopard.");
+                Console.WriteLine("Something else catches your eye as you're looking around.. you spot a key hanging off a pipe right above the Leopard.");
                 Thread.Sleep(500);
                 Console.WriteLine();
-                Console.WriteLine("You spot two possible exits, one behind the leopard and another one to your right that seems to go deeper into the sewer.");
+                Console.WriteLine("You spot 2 possible exits, one behind the Leopard, and another one to your right that seems to go deeper into the sewer.");
                 Thread.Sleep(500);
                 Console.WriteLine();
                 Console.WriteLine("What do you do...?");
@@ -207,13 +214,13 @@ namespace Sloth_game_project
                 switch (answer2)
                 {
                     case "3":
-                        Console.WriteLine("there is a clearing going south, so you decide that it is best to leave the leopard alone");
+                        Console.WriteLine("There is a clear path South, so you decide that it is best to leave the Leopard alone");
                         Thread.Sleep(3000);
                         Console.Clear();
                         location = 3;
                         break;
                     case "2":
-                        Console.WriteLine("You look down at the ground and notice that it is covered in cans and glass which will make it impossible to sneek past");
+                        Console.WriteLine("You look down at the ground and notice that it is covered in Cans, Glass and all kinds of rubbish, which will make it impossible to sneak past");
                         Console.WriteLine("You realise that it would not be worth trying to sneak past");
                         Thread.Sleep(3000);
                         Console.Clear();
@@ -224,19 +231,19 @@ namespace Sloth_game_project
                             sloth[1].inventory = "UNKNOWN KEY";
                             sloth[1].description = "- You don't know what door this goes into, just try to use for as many locked doors as you can find.";
 
-                            Console.WriteLine("You decide to try and grab the key hanging below the leopard");
+                            Console.WriteLine("You decide to try and grab the key hanging below the Leopard");
                             Thread.Sleep(500);
                             Console.WriteLine();
-                            Console.WriteLine("As you walk over the glass and cans on the ground it awakes the leopard from its slumber");
+                            Console.WriteLine("As you walk over the glass and cans on the ground, it WAKES THE LEOPARD UP FROM ITS SLUMBER!!");
                             Thread.Sleep(500);
                             Console.WriteLine();
-                            Console.WriteLine("with your quick thinking you take out the rusty knife from earlier and and hold it infront of the charging leopard");
+                            Console.WriteLine("With your quick thinking, you take out the RUSTY KNIFE from earlier and and hold it infront of the charging Leopard!");
                             Thread.Sleep(500);
                             Console.WriteLine();
-                            Console.WriteLine("The knife entres the leopard and which gives it a swift death");
+                            Console.WriteLine("The knife pierces the Leopard with great force, killing it quickly!");
                             Thread.Sleep(500);
                             Console.WriteLine();
-                            Console.WriteLine("You stand on the Leopard's corpse which allows you to easily grab the key.");
+                            Console.WriteLine("'phew', you sigh as you reach for the un-guarded key.");
                             Thread.Sleep(500);
                             Console.WriteLine();
                             Console.WriteLine("This key might be useful later.");
@@ -249,14 +256,16 @@ namespace Sloth_game_project
                         }
                         else
                         {
-                            Console.WriteLine("You decide to try and grab the key hanging below the leopard");
+                            Console.WriteLine("You decide to try and grab the key hanging below the Leopard");
                             Thread.Sleep(500);
                             Console.WriteLine();
-                            Console.WriteLine("As you walk over the glass and cans on the ground it awakes the leopard from its slumber");
+                            Console.WriteLine("As you walk over the glass and cans on the ground it awakens the Leopard from its deep slumber!!");
                             Thread.Sleep(500);
                             Console.WriteLine();
-                            Console.WriteLine("with no form of protection you are left to be mauled by the leopard");
+                            Console.WriteLine("With no form of protection, you are left unprotected as the Leopard charges for you!");
                             Thread.Sleep(500);
+                            Console.WriteLine("The Leopard digs its teeth into your neck, killing you instantly.");
+                            Thread.Sleep(800);
                             Console.WriteLine();
                             Console.WriteLine("[GAME OVER]");
                             Thread.Sleep(1500);
@@ -292,23 +301,22 @@ namespace Sloth_game_project
             {
                 do
                 {
-                    Console.WriteLine("You manage to sneak past the Leopard and you walk into the room, cautious because you were scared of another beast waiting in your path.");
+                    Console.WriteLine("You manage to sneak past the Leopard and you walk into the room, cautious because you were scared of another beast lurking in your path.");
                     Thread.Sleep(500);
                     Console.WriteLine();
-                    Console.WriteLine("You peek into the room and see a floating apparition which you can make out as something familiar.");
+                    Console.WriteLine("You peek into the room and see a floating apparition, which you can make out as something familiar.");
                     Thread.Sleep(500);
                     Console.WriteLine();
-                    Console.WriteLine("As you study it more, you realise that it is a sloth, but not a living one... a ghost.");
+                    Console.WriteLine("As you study it more, you realise that it is a SLOTH! but not a living one... a GHOST SLOTH!");
                     Thread.Sleep(500);
                     Console.WriteLine();
-                    Console.WriteLine("It turns around and looks at you with its deathly eyes. It opens its mouth and with a deep voice says,");
+                    Console.WriteLine("It turns around and looks at you with its deathly eyes. It opens its mouth and with a deep voice says...");
                     Thread.Sleep(500);
                     Console.WriteLine();
                     Console.WriteLine("'In order to continue on your journey, you must first complete a riddle.'");
                     Thread.Sleep(1000);
                     Console.WriteLine();
                     Console.WriteLine("Dazed and confused, you comply with the ghost as you realise there is no other way,");
-                    Console.WriteLine("unless you want to deal with the leopard.");
                     Thread.Sleep(500);
                     Console.WriteLine();
 
@@ -317,28 +325,28 @@ namespace Sloth_game_project
 
                     do
                     {
-                        Console.WriteLine("'It cannot be seen, cannot be felt,'");
-                        Console.WriteLine("'cannot be heard, cannot be smelt.'");
+                        Console.WriteLine("'It cannot be seen, it cannot be felt'");
+                        Console.WriteLine("'It cannot be heard, it cannot be smelt'");
                         Console.WriteLine();
-                        Console.WriteLine("'It lies behind stars and under hills,'");
-                        Console.WriteLine("'and empty holes it fills.'");
+                        Console.WriteLine("'It lies behind the stars and under the hills'");
+                        Console.WriteLine("'and empty holes it fills'");
                         Console.WriteLine();
-                        Console.WriteLine("'It comes out first and follows after,'");
-                        Console.WriteLine("'ends life, kills laughter.'");
+                        Console.WriteLine("'It comes out first and follows after'");
+                        Console.WriteLine("'ends life, kills laughter'");
                         Console.WriteLine();
-                        Console.Write("What am I? ");
+                        Console.Write("What am i..? ");
 
                         userRiddleAns = Console.ReadLine();
 
                         if ((userRiddleAns != "dark") && (riddleAtt == 10))
                         {
-                            Console.WriteLine("Sigh, I did not expect you to be this unintelligent.");
-                            Console.WriteLine("Tell me that the answer is 'dark'.");
+                            Console.WriteLine("Sigh, I did not expect you to be this dumb..");
+                            Console.WriteLine("Tell me that the answer is 'dark' and stop wasting my time..");
                         }
 
                         if (userRiddleAns != "dark")
                         {
-                            Console.WriteLine("'Wrong...'");
+                            Console.WriteLine("'Wrong..'");
                             riddleAtt += 1;
                         }
                     } while (userRiddleAns != "dark");
@@ -357,44 +365,44 @@ namespace Sloth_game_project
 
         public static void LevelFive()
         {
-            Console.WriteLine("You creep through the door and notice something in the corner,");
-            Console.WriteLine("it sounds like something is feasting on bones.");
+            Console.WriteLine("You creep through the door and notice something in the corner");
+            Console.WriteLine("It sounds like something is feasting on bones.");
             Thread.Sleep(500);
             Console.WriteLine();
             Console.WriteLine("The smell in the room is putrid, like something died a long time ago.");
             Thread.Sleep(500);
             Console.WriteLine();
-            Console.WriteLine("Suddenly, the feasting noise is replaced by squeaking coming from the thing in the corner,");
-            Console.WriteLine("like something hasn't been oiled.");
+            Console.WriteLine("Suddenly, the feasting noise is replaced by squeaking, coming from the 'thing' in the corner");
+            Console.WriteLine("... as if whatever 'it' is hasn't been oiled.");
             Thread.Sleep(500);
             Console.WriteLine();
             Console.WriteLine("As you creep forward to get a closer look, you step on an old bone.");
             Thread.Sleep(2000);
             Console.WriteLine();
-            Console.WriteLine("C        R       A       C       K");
+            Console.WriteLine("'C        R       A       C       K'");
             Thread.Sleep(500);
             Console.WriteLine();
             Console.WriteLine("You stumble back as you see the figure turn around and move towards the light coming from the control room.");
             Thread.Sleep(500);
             Console.WriteLine();
-            Console.WriteLine("The squeaking gets louder and louder as it moves closer.");
+            Console.WriteLine("The squeaking gets louder and LOUDER as it moves closer!");
             Thread.Sleep(500);
             Console.WriteLine();
-            Console.WriteLine("As the figure moves into the light you see what has been feasting...");
+            Console.WriteLine("As the figure moves into the light, you see what has been feasting...");
             Thread.Sleep(500);
             Console.WriteLine();
-            Console.WriteLine("A large and black wild dog... but without any legs.");
+            Console.WriteLine("A large, black wild DOG... but without any legs.");
             Thread.Sleep(500);
             Console.WriteLine();
-            Console.WriteLine("Instead it sits upon two sets of wheels. A dog with wheels for legs.");
+            Console.WriteLine("Instead, it sits upon two sets of wheels. A dog with wheels for legs.");
             Thread.Sleep(500);
             Console.WriteLine();
-            Console.WriteLine("You don't have time to process this as its coming right towards you!");
+            Console.WriteLine("You don't have time to process this as it's coming right towards you!");
             Console.WriteLine("What do you do?");
             Thread.Sleep(500);
             Console.WriteLine("1 - Look for something in your inventory that you could use against it.");
-            Console.WriteLine("2 - Attempt to dodge the dog and run NORTH.");
-            Console.WriteLine("3 - Attempt to dodge the dog and run SOUTH.");
+            Console.WriteLine("2 - Attempt to dodge the dog and run North.");
+            Console.WriteLine("3 - Attempt to dodge the dog and run South.");
             Console.WriteLine();
             answer5 = Console.ReadLine();
 
@@ -425,34 +433,51 @@ namespace Sloth_game_project
 
         static void Main()
         {
+            if (Console.BackgroundColor == ConsoleColor.Black)
+            {
+                Console.BackgroundColor = ConsoleColor.Black;
+                Console.ForegroundColor = ConsoleColor.DarkYellow;                  
+            }
+
+
+
+
+
             string selection = "";
 
             do
             {
-                Console.WriteLine("     _       _   _           ");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("                                          _       _   _           ");
                 Thread.Sleep(125);
-                Console.WriteLine("    | |     | | | |          ");
+                Console.WriteLine("                                         | |     | | | |          ");
                 Thread.Sleep(125);
-                Console.WriteLine("    | |     | | | |          ");
+                Console.WriteLine("                                         | |     | | | |                              TM. ");
                 Thread.Sleep(125);
-                Console.WriteLine(" ___| | ___ | |_| |__   ___  ___ __ _ _ __   ___ ");
+                Console.WriteLine("                                      ___| | ___ | |_| |__   ___  ___ __ _ _ __   ___ ");
                 Thread.Sleep(125);
-                Console.WriteLine("/ __| |/ _ \\| __| '_ \\ / __|/ __/ _` | '_ \\ / _ \\");
+                Console.WriteLine("                                     / __| |/ _ \\| __| '_ \\ / __|/ __/ _` | '_ \\ / _ \\");
                 Thread.Sleep(125);
-                Console.WriteLine("\\__ \\ | (_) | |_| | | |\\__ \\ (_| (_| | |_) |  __/");
+                Console.WriteLine("                                     \\__ \\ | (_) | |_| | | |\\__ \\ (_| (_| | |_) |  __/");
                 Thread.Sleep(125);
-                Console.WriteLine("|___/_|\\___ /\\__|_| |_||___/\\___\\__,_| .__/ \\___|");
+                Console.WriteLine("                                     |___/_|\\___ /\\__|_| |_||___/\\___\\__,_| .__/ \\___|");
                 Thread.Sleep(125);
-                Console.WriteLine("                                     | |");
+                Console.WriteLine("                                     A text based survival game           | |");
                 Thread.Sleep(125);
-                Console.WriteLine("                                     | |");
+                Console.WriteLine("                                                                          | |");
                 Thread.Sleep(125);
-                Console.WriteLine("                                     |_|");
+                Console.WriteLine("                                                                          |_|");
                 Console.WriteLine();
-                Console.WriteLine("1: PLAY");
-                Console.WriteLine("2: QUIT");
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
+                Console.WriteLine("                                               What would you like to do?" );
                 Console.WriteLine();
-                Console.WriteLine("Tip: Type the word inventory to view your inventory while in-game.");
+                Console.WriteLine("                                                        1 = PLAY");
+                Console.WriteLine();
+                Console.WriteLine("                                                        2 = QUIT");
+                Console.WriteLine(); 
+                Console.WriteLine();
+                Console.WriteLine("                           TIP: Type the word 'inventory', to view your inventory while in-game.");
+                Console.WriteLine("                              TIP: Type the word 'map', to view your inventory while in-game.");
                 Console.WriteLine();
                 Console.Write("Input selection: ");
                 selection = Console.ReadLine();
