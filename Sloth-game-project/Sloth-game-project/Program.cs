@@ -82,8 +82,8 @@ namespace Sloth_game_project
                 switch (answer1)
                 {
                     case "1":                        
-                        Console.WriteLine("You head South through the sewer grate... you manage to JUST fit through.");
-                        Thread.Sleep(3000);
+                        Console.WriteLine("You head south through the sewer grate, you barely fit through it.");
+                        Thread.Sleep(1500);
                         Console.Clear();
                         location = 2;
                         break;
@@ -203,29 +203,38 @@ namespace Sloth_game_project
                 Console.WriteLine();
                 Console.WriteLine("What do you do...?");
                 Console.WriteLine();
-                Console.WriteLine("1 - Attempt to sneak behind the Leopard and continue North.");
-                Console.WriteLine("2 - Sneak around the Leopard and head East.");
-                Console.WriteLine("3 - Try to grab the key that is right above the sleeping Leopard.");
-                Console.WriteLine("4 - Head back South.");
+                Console.WriteLine("1 - Go right past the leopard and continue south.");
+                Console.WriteLine("2 - Sneak around the leopard and head East.");
+                Console.WriteLine("3 - Try to grab the key that is right above the sleeping leopard.");
+                Console.WriteLine("4 - Head back north.");
                 Console.WriteLine();
                 answer2 = Console.ReadLine();
                 Console.Clear();
 
                 switch (answer2)
                 {
-                    case "3":
-                        Console.WriteLine("There is a clear path South, so you decide that it is best to leave the Leopard alone");
-                        Thread.Sleep(3000);
+                    case "1":
+                        Console.WriteLine("You see a clear path heading south without any danger, so you decide that it is best to leave the leopard alone.");
+                        Thread.Sleep(1500);
                         Console.Clear();
                         location = 3;
                         break;
                     case "2":
-                        Console.WriteLine("You look down at the ground and notice that it is covered in Cans, Glass and all kinds of rubbish, which will make it impossible to sneak past");
-                        Console.WriteLine("You realise that it would not be worth trying to sneak past");
-                        Thread.Sleep(3000);
+                        Console.WriteLine("You look down at the ground and notice that it is covered in cans, llass and all kinds of rubbish, which will make it impossible to sneak past.");
+                        Thread.Sleep(500);
+
+                        if (sloth[0].inventory == "RUSTY KNIFE")
+                        {
+                            Console.WriteLine("You remember the knife you found earlier.");
+                            Thread.Sleep(500);
+                            Console.WriteLine("You don't think that a sloth with a knife could take on a leopard head-on.");
+                        }
+
+                        Console.WriteLine("You realise that it would not be worth trying to sneak past.");
+                        Thread.Sleep(1000);
                         Console.Clear();
                         break;
-                    case "1":
+                    case "3":
                         if ((sloth[0].inventory == "RUSTY KNIFE") && (answer2 == "3"))
                         {
                             sloth[1].inventory = "UNKNOWN KEY";
@@ -301,7 +310,7 @@ namespace Sloth_game_project
             {
                 do
                 {
-                    Console.WriteLine("You manage to sneak past the Leopard and you walk into the room, cautious because you were scared of another beast lurking in your path.");
+                    Console.WriteLine("You decide to continue heading south, becoming extra cautious in case you encounter more beasts.");
                     Thread.Sleep(500);
                     Console.WriteLine();
                     Console.WriteLine("You peek into the room and see a floating apparition, which you can make out as something familiar.");
@@ -409,18 +418,42 @@ namespace Sloth_game_project
             switch (answer5)
             {
                 case "1":
-                    if (sloth[2].inventory == "BANANA PEEL")
+                    if ((sloth[2].inventory == "BANANA PEEL") && (sloth[0].inventory == "RUSTY KNIFE"))
                     {
-                        
+                        Console.WriteLine("You check your pockets, you have a banana peel and a rusty knife.");
+                        Thread.Sleep(500);
+                        Console.WriteLine("You can't decide what to use because the dog is moving too fast to think rationally.");
+                        Thread.Sleep(500);
+                        Console.WriteLine("So you just chuck both at the dog.");
+                        Thread.Sleep(500);
+                        Console.WriteLine("The peel ends up covering the dog's head, and since these two objects are too heavy,-");
+                        Console.WriteLine("the knife misses the dog by a few feet in front of it and it ends up rolling over it.");
+                        Thread.Sleep(1500);
+                    }
+                    else if (sloth[2].inventory == "BANANA PEEL")
+                    {
+                        Console.WriteLine("You remember the banana peel that you have in your inventory,");
+                        Thread.Sleep(1000);
+                        Console.WriteLine("Using your quick wits, you throw the banana peel onto the floor as the dog rolls towards you.");
+                        Thread.Sleep(500);
+                        Console.WriteLine("The banana peel tangles the front left wheel of the dog and throws it off-balance.");
+                        Thread.Sleep(500);
                     }
                     else if (sloth[0].inventory == "RUSTY KNIFE")
                     {
-
+                        Console.WriteLine("You remember the rusty knife that you have in your inventory.");
+                        Thread.Sleep(1000);
+                        Console.WriteLine("Using your quick wits, you throw the knife at the dog as it rolls towards you.");
+                        Thread.Sleep(500);
+                        Console.WriteLine("The knife embeds into the front left wheel of the dog and throws it off-balance.");
+                        Thread.Sleep(500);
                     }
                     else
                     {
-
+                        Console.WriteLine("u killed dog gj, ggwp yeetus");
+                        Thread.Sleep(500);
                     }
+                    Console.WriteLine("The dog flies past you at lightning speed as you watch it crash through the door to your west with a distant howl.");                 
                     break;
                 case "2":
                     break;
