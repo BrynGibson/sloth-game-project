@@ -356,6 +356,41 @@ namespace Sloth_game_project
         }
 
 
+        public static void RoomFour()
+        {
+            location = 4;
+            string answer4;
+            Console.WriteLine("You enter through the locked door into a room that does not seem like the sewers.");
+            Console.WriteLine("As you look around more you see old computer equipment and surveillance gear.");
+            Thread.Sleep(500);
+            Console.WriteLine();
+            Console.WriteLine("It looks like a control room for the sewers.");
+            Thread.Sleep(500);
+            Console.WriteLine();
+            Console.WriteLine("It looks abandoned however, like the workers dropped everthing and left, including their lunch.");
+            Console.WriteLine("A water bottle and banna have been left on the table, the only thing that hasnt yet been covered in spider webs.");
+            Thread.Sleep(500);
+            Console.WriteLine();
+            Console.WriteLine("There is also a metal door that has been left open, almost like someone left in a hurry...");
+            Thread.Sleep(2000);
+            Console.WriteLine();
+            Console.WriteLine("A dent in the door is also present");
+            Thread.Sleep(500);
+            Console.WriteLine();
+            Console.WriteLine("1. Drink the water\n2.Eat the Banana\n3.Go back west\n4.Continue North");
+            answer4 = Console.ReadLine();
+
+            switch (answer4)
+            {
+                case "1": Console.WriteLine("You open the water and take a long chug from it, your parched after the run from the poachers"); break;
+                case "2": Console.WriteLine("You bite into the banana, trying to aviod the mould spreading inside, after running from the poachers its the best thing you have to keep your energy"); break;
+                case "3": Console.WriteLine("You go back through the way you came"); break;
+                case "4": Console.WriteLine("You decide to continue through the metal door that is still open"); break;
+                
+            }
+           
+        }
+
 
 
 
