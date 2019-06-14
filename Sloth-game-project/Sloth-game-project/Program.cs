@@ -184,6 +184,7 @@ namespace Sloth_game_project
 
         public static void LevelTwo()
         {
+            location = 2;
             string answer2;
 
             //ROOM 2//
@@ -294,6 +295,7 @@ namespace Sloth_game_project
 
         public static void LevelThree()
         {
+            location = 3;
             //ROOM 3 SOUTH//
             string riddleAnswer = "dark";
 
@@ -400,6 +402,7 @@ namespace Sloth_game_project
 
         public static void LevelFive()
         {
+            location = 5;
             Console.WriteLine("You creep through the door and notice something in the corner");
             Console.WriteLine("It sounds like something is feasting on bones.");
             Thread.Sleep(500);
